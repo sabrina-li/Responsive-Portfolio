@@ -83,7 +83,7 @@ main {
 
 }
 
-#bio-main, #contact-main, #proto-main{
+#bio-main, #contact-main{
     min-height: 100%;
     /* padding: 20px; */
     /* margin: 20px 200px ; */
@@ -111,9 +111,10 @@ main {
 }
 #bio-p{
     margin-left: 40px;
+    margin-right: 40px;
     top: 0;
     bottom: auto;
-    width: 90%;
+    /* width: 90%; */
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2;
     font-size: 15px;
@@ -145,17 +146,18 @@ footer {
 #proto-main{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    grid-template-columns: auto auto;
     overflow: auto;
     margin-top: 0px;
     border:none;
+    padding-left: 40px
 }
 .square{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     margin-top: 20px;
-    margin-left: 20px
+
 }
 
 .protofoliolable{
@@ -288,7 +290,22 @@ nav .icon {
         position: relative;
         display: grid;
         grid-template-columns: auto ;
+        padding-left: 0;
     }
+    .square{
+        width: 95%;
+        height: auto;
+    }
+
+    .protofoliolable{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        
+        text-align: center;
+        font-size: 30px;
+    }
+
 }
 
 
