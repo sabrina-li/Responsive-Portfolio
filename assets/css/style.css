@@ -1,5 +1,6 @@
 html,body {
      height: 100%;
+     width: 100%;
      padding: 0;
      margin: 0;
     /* width: 100%; */
@@ -26,7 +27,7 @@ header,#myheader{
 }
 
 #myheader{
-    width: 90%;
+    width: 960px;
     position: relative;
 }
 
@@ -72,12 +73,13 @@ nav {
 }
 
 main {
-    width: 100%;
+    width: 960px;
+    margin: auto;
     min-height: 81%;
     overflow: auto;
     margin-top: 100px;   
     /* background: #C0C0C0; */
-    /* text-align: center; */  
+    /* text-align: center; */ 
 
 }
 
@@ -86,8 +88,8 @@ main {
     /* padding: 20px; */
     /* margin: 20px 200px ; */
     background: white;
-    width: 90%;
-    margin: auto;
+    width: 600px;
+    margin-right: auto;
     margin-top: 20px;
     border: 1px solid #dddddd;
 }
@@ -124,7 +126,7 @@ main {
 
 footer {
     /* color: #707070; */
-    /* border: 1px solid gray; */
+    border-top: 4px solid #4aaaa5;
     position: sticky;
     top: 95%;
     height: fit-content;
@@ -137,22 +139,23 @@ footer {
     overflow: hidden;
     text-align: center;
     color:#ffffff;
+    margin-top:10px;
 }
 
 #proto-main{
     position: relative;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 0 300px);
-    /* grid-template-columns: auto auto ; */
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     overflow: auto;
     margin-top: 0px;
     border:none;
 }
 .square{
     position: relative;
-    width: 250px;
-    height: 250px;
-    margin: 50px;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 20px
 }
 
 .protofoliolable{
@@ -199,8 +202,33 @@ nav .icon {
     display: none;
 }
 
+@media screen and (max-width:980px){
+    html,body,main {
+        height: 100%;
+        width: 100%;
+    }
+    
+    #myheader,#bio-main, #contact-main, #proto-main{
+        width: 95%;
+        margin-left: auto;
+    }
+    #bio-image{
+        width:250px;
+    }
 
-@media screen and (max-width: 600px) {
+    #proto-main{
+        position: relative;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:768px){
+
+}
+
+
+@media screen and (max-width: 640px) {
     nav{
         display: inline;
         position: absolute;
@@ -212,10 +240,6 @@ nav .icon {
         display: inline;
         color: gray;
     }
-}
-
-
-@media screen and (max-width: 600px) {
     .nav.responsive {
         width: fit-content;
         position: absolute;
@@ -243,7 +267,28 @@ nav .icon {
     h1{
         position: relative;
     }
+    main{
+        margin-top: 80px;
+    }
     header,#myheader{
         overflow: visible
     }    
+    #about,#bio-p{
+        margin: 10px auto;
+        margin-bottom: 10px;
+        width: 90%;
+    }
+    #bio-image{
+        width:100%;
+        display: flex;
+        /* margin: 20px 40px; */
+        float:none;
+    }
+    #proto-main{
+        position: relative;
+        display: grid;
+        grid-template-columns: auto ;
+    }
 }
+
+
