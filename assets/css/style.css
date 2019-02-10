@@ -15,10 +15,11 @@ header,#myheader{
     width: 100%;
     background-color: #ffffff;
     overflow: hidden;
-    position: fixed;
+    position: static;
+    /* position: fixed;
     top: 0;
     left: 0;
-    right: 0;
+    right: 0; */
     margin: 0 auto;
     /* height: 80px; */
     height: fit-content;
@@ -77,7 +78,7 @@ main {
     margin: auto;
     min-height: 81%;
     overflow: auto;
-    margin-top: 100px;   
+    margin-top: 10px;   
     /* background: #C0C0C0; */
     /* text-align: center; */ 
 
@@ -109,7 +110,7 @@ main {
     margin-right: 40px;
     float: left;
 }
-#bio-p{
+#bio-p,.contactform{
     margin-left: 40px;
     margin-right: 40px;
     top: 0;
@@ -119,10 +120,6 @@ main {
     line-height: 2;
     font-size: 15px;
     
-}
-
-.contactform{
-    margin-left: 20px;
 }
 
 footer {
@@ -173,24 +170,23 @@ footer {
 }
 
 
-#contacttitle{
-    border-bottom: 1px solid gray;
-}
+
 
 input,label,textarea, .button{
-    width: 80%;
+    width: 100%;
     padding: 12px;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
-    margin-left: 16px;
-    margin-bottom: 16px;
+    margin: 16px auto;
     resize: vertical;
 }
 
-input{
+input,textarea{
     border: 1px solid #ccc;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
+
 
 .button{
     background: #4aaaa5;
@@ -208,6 +204,13 @@ nav .icon {
     html,body,main {
         height: 100%;
         width: 100%;
+    }
+    header{
+        position: fixed;
+        top: 0;
+    }
+    main{
+        margin-top: 90px;
     }
     
     #myheader,#bio-main, #contact-main, #proto-main{
@@ -235,7 +238,6 @@ nav .icon {
         display: inline;
         position: absolute;
         top: 0;
-        
     }
     nav a{display: none;}
     nav .icon {
@@ -270,12 +272,12 @@ nav .icon {
         position: relative;
     }
     main{
-        margin-top: 80px;
+        margin-top: 90px;
     }
     header,#myheader{
         overflow: visible
     }    
-    #about,#bio-p{
+    #about,#bio-p,#contacttitle{
         margin: 10px auto;
         margin-bottom: 10px;
         width: 90%;
