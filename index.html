@@ -13,31 +13,28 @@
     </head>
     <body>
 
-        <header>
+        <header class="header">
             <div id="myheader">
                 <!--name-->
                 <h1>Sabrina Li</h1>
                 <nav class="nav" id="mynav"> 
-                    <a  class="icon" href="javascript:void(0);"onclick="showVerticalNav()">
-                            <i class="fa fa-bars"></i>
-                    </a> 
                     <a class="a" id="aboutbutton" href="index.html">about</a>
                     <a class="vs">|</a>
                     <a class="a" id="protfoliobutton"  onclick="protClicked()">protofolio</a>
                     <a class="vs">|</a>
-                    <a class="a" id="contactbutton"  onclick="contactClicked()">contact</a>
-                    
+                    <a class="a" id="contactbutton"  onclick="contactClicked()">contact</a>   
                 </nav> 
+                <i class="fa fa-bars icon" onclick="showVerticalNav()"></i>
             </div>
         </header>
         
     <!--main page show based on nav-->
         <main>
             <div id="bio-main"> 
-                <h2 id="about">About Me</h2>
+                <h2 class="about">About Me</h2>
                 
-                <p id="bio-p">
-                    <img id="bio-image" src="assets/images/profile.png" width="200px" alt="Sabrina" />
+                <p class="content-sction">
+                    <img id="bio-image" src="assets/images/profile.png" alt="Sabrina" />
                     Full stack web developer based in Atlanta, Georgia. 
                     I'm a trained full stack developer with a backgroun in enterprise applications. 
                     With internet changing the world for the better, people's lives are flooded with numrouse websites and mobile applications. 

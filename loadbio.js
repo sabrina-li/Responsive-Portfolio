@@ -12,8 +12,6 @@ function contactClicked(){
     
 }
 
-        
-
 function showVerticalNav() {
     var x = document.getElementById("mynav");
     if (x.className === "nav") {
@@ -22,3 +20,5 @@ function showVerticalNav() {
     x.className = "nav";
     }
 }
+
+
