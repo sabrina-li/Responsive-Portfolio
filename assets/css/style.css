@@ -164,7 +164,7 @@ header #myheader nav .a:hover{
     color: #ffffff;
     width: 100%;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /* contact page specific */
@@ -294,6 +294,6 @@ footer {
         top: 60%;
         left: 50%;
         text-align: center;
-        font-size: 30px;
+        font-size: 23px;
     }
 }
