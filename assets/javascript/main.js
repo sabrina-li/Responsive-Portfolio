@@ -1,20 +1,6 @@
-function contactClicked(){
-    $("#bio-main").load("contact.html"); 
-    var x = document.getElementById("mynav");
-    x.className = "nav";
-}
-
-function showVerticalNav() {
-    var x = document.getElementById("mynav");
-    if (x.className === "nav") {
-    x.className += " responsive";
-    } else {
-    x.className = "nav";
-    }
-}
-
-
 $(document).ready(function(){
+
+    $("#contactbutton").on('click',contactClicked)
     $(".square").mousemove(function(event){
         $($("#clipping-1").children("circle")).attr("cx",event.offsetX);
         $($("#clipping-1").children("circle")).attr("cy",event.offsetY);
@@ -27,4 +13,23 @@ $(document).ready(function(){
         // $($(this).children("a")[0]).children("img").css({"clip-path": ""})
         $($(this).children("a")[0]).children("img").removeClass("svgclipping")
     })
+
+    $("#verticalNav").on('clicken',showVerticalNav);
 })
+
+
+function contactClicked(){
+    $("main").empty();
+    let contact = $("<div>").addClass("maindiv");
+    contact.load("contact.html"); 
+    $("main").append(contact);
+}
+
+function showVerticalNav() {
+    var x = document.getElementById("mynav");
+    if (x.className === "nav") {
+    x.className += " responsive";
+    } else {
+    x.className = "nav";
+    }
+}

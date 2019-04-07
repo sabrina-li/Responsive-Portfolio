@@ -1,7 +1,9 @@
 :root{
     --lightest-white:#F2F2F2;
     --lighter-white:#CAC9C8;
+    --dark-gray:#373737;
     --darker-gray:#222222;
+    
 }
 
 html,body {
@@ -37,9 +39,18 @@ header #myheader{
     position: relative;
     height: fit-content;
 }
-header #myheader::after{
+
+
+header #myheader h1 {
+    position: relative;
+    padding: 20px 10px 10px 10px;
+    width: fit-content;
+    display: block;
+    font-size: 30px;
+}
+header #myheader h1::after{
     content: "";
-    top: 10px;
+    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
@@ -47,15 +58,6 @@ header #myheader::after{
     z-index: -1;   
     background: #222222;
     opacity: 0.5;
-}
-
-header #myheader h1 {
-    padding: 20px 0px 10px 10px;
-    width: fit-content;
-    display: block;
-    
-    font-size: 30px;
-    /* font-family: 'Georgia', Times, Times New Roman, sans serif;  */
 }
 
 
@@ -82,10 +84,11 @@ header #myheader nav .a{
     margin-bottom: 0.8rem;
     text-decoration: none;
     padding: 0 0.8rem;
-    /* color:white; */
+    cursor: pointer;
 }
 header #myheader nav .a:visited{
     color:var(--lightest-white);
+    
 }
 
 header #myheader nav .a:hover{
@@ -94,7 +97,6 @@ header #myheader nav .a:hover{
 
 /* main background */
 main{
-    padding-top: 180px;
     background: url("../images/ryoji-hayasaka-180564-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,8 +107,13 @@ main{
 
 /* main section is 960 px width */
 .maindiv{
+    padding-top: 80px;
     width: 960px;
     margin: 10px auto 0 auto;
+}
+
+#about{
+    padding-top:100px;
 }
 
 /* topic in main section align with content section */
@@ -202,7 +209,7 @@ main{
 
 .square:hover .portfoliolable{
     background: none;
-    transition: background-color 0.5s ease-out;
+    transition: background-color 0.8s ease-out;
 }
 
 .svgclipping{
@@ -230,15 +237,28 @@ input,textarea{
     border-radius: 4px;
     box-sizing: border-box;
     resize: vertical;
+    background: none;
+    color:var(--lighter-white)
+}
+textarea:focus{
+    color: var(--lightest-white);
+    background: var(--darker-gray);
+    opacity: 0.8;
 }
 
 .button{
-    background: #4aaaa5;
+    background: var(--darker-gray);
     color: var(--lighter-white);
     border: none;
+    border-radius: 4px;
     width: 100px;
     padding: 0.5rem;
     font-size: 18px;
+    margin-bottom: 20px;
+}
+.button:hover{
+    background: var(--dark-gray);
+    cursor: pointer;
 }
 
 
