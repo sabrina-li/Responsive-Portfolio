@@ -8,10 +8,10 @@ html,body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background: url("../images/gravel.png");
     background-repeat: repeat;
-    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: example;
-    animation-duration: 4s;
+    /* -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    /* -webkit-animation-duration: 4s; Safari 4.0 - 8.0 */
+    /* animation-name: example; */
+    /* animation-duration: 4s; */ 
 }
 
   
@@ -175,20 +175,21 @@ header #myheader nav .a:hover{
     width: 100%;
 }
 
-.square img{
+.svgclipping{
     position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
     transition: clip-path 0.3s ease-in-out;
     -webkit-clip-path: circle(50 at 0 0);
-    clip-path: circle(0 at 0 0);
+    clip-path: url(#clipping-1)
 }
 
-.square:hover a img, .square.hover a img{    
+/* 
+ .square a img, .square a img{    
     -webkit-clip-path: circle(50% at 0 0);
     clip-path: circle(50% at 0 0);
-} 
+}   */
 
 /* contact page specific */
 input,textarea{
