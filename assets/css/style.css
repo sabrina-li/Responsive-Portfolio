@@ -106,7 +106,7 @@ main{
 /* main section is 960 px width */
 .maindiv{
     width: 960px;
-    margin: 10px auto 10px auto;
+    margin: 10px auto 0 auto;
 }
 
 /* topic in main section align with content section */
@@ -241,18 +241,30 @@ input,textarea{
     font-size: 18px;
 }
 
+
+
 /* footer sticky */
 footer {
-    border-top: 4px solid #4aaaa5;
+    border-top: 3px solid var(--lighter-white);
     position: sticky;
-    top: 94%;
-    height: fit-content;
-    font-size: small;
+    top: 90%;
+    height:50px;
+    padding-top: 10px;
     width:100%;
-    background: #666666;
+    background: url(../images/5cd7c9c98eb92a1e13c09075c406aae1.jpg);
     text-align: center;
-    color:var(--lighter-white);
-    /* margin-top:10px; */
+    color:var(--lightest-white);
+}
+footer::after{
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+    background: #222222;
+    opacity: 0.5;
 }
 
 
