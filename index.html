@@ -1,110 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Sabrina Li | Web developer</title>
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
-        <script src="loadbio.js"></script>
-        <!-- <script data-require="jquery@1.11.3" data-semver="1.11.3" src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
-    </head>
-    <body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sabrina Li | Web developer</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
 
         <header class="header">
             <div id="myheader">
                 <!--name-->
                 <h1>Sabrina Li</h1>
-                <nav class="nav" id="mynav"> 
+                <nav class="nav" id="mynav">
                     <a class="a" id="aboutbutton" href="index.html">about</a>
                     <a class="vs">|</a>
-                    <a class="a" id="protfoliobutton"  onclick="protClicked()">protofolio</a>
+                    <a class="a" id="protfoliobutton" onclick="protClicked()">protofolio</a>
                     <a class="vs">|</a>
-                    <a class="a" id="contactbutton"  onclick="contactClicked()">contact</a>   
-                </nav> 
+                    <a class="a" id="contactbutton" onclick="contactClicked()">contact</a>
+                </nav>
                 <i class="fa fa-bars icon" onclick="showVerticalNav()"></i>
             </div>
         </header>
-        
-    <!--main page show based on nav-->
+
+
+        <!--main page show based on nav-->
         <main>
-            <div id="bio-main"> 
-                <h2 class="about">About Me</h2>
-                
-                <p class="content-sction">
-                    <img id="bio-image" src="assets/images/profile.png" alt="Sabrina" />
-                    Full stack web developer based in Atlanta, Georgia. I'm a trained full stack developer with a background in enterprise applications. With internet changing the world for the better, people's lives are flooded with numerous websites and mobile applications. That is why I believe well designed and developed, smooth and user friendly and intuitive websites are the true game changer. I enjoy to design and develop websites and applications that are fun innovative and make people's life better. No matter if you are an individual who is looking to get a brand new shinny website to boost your career, or small business that want a professional looking website to attract more client. I'd love to help! Besides my passion for the tech world. I love the great outdoors and get my inspiration from this beautiful planet that we all share. So let's work together to make this world a better place.
-                </p>
-             </div>
+            <div class="maindiv">
+                <!-- about -->
+                <h2 class="topline" id="about">About Me</h2>
 
-
-
-
-
-            <h2 class="about">Portfolio</h2>
-
-            <div class="content-sction" id="port-section">
-                <div class="square">
-                    <svg>
-                        <defs>
-                            <clipPath id="clipping-1">
-                                <circle cx="100" cy="100" r="50%" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                    <a href="https://sabrina-li.github.io/Word-Guess-Game"> 
-                        <img src="assets/images/Deathly_Hallows_Sign.jpg" height="100%" width="100%"/>
-                    
-                        <div class="protofoliolable">
-                            <p>Harry Potter Hangman</p>
-                        </div> 
-                    </a>    
-                </div>
-                <div class="square" > 
-                    <a href="https://sabrina-li.github.io/Star-Wars-RPG/"> 
-                    <img src="assets/images/star-wars.png" height="100%" width="100%"/>
-                    <div class="protofoliolable">
-                        <p id="square">Star Wars RPG</p>
-                    </div>
-                    </a>    
-                </div>
-
-                <div class="square"> 
-                    <a href="https://sabrina-li.github.io/Trivia-Game/"> 
-                    <img src="assets/images/cat.png" height="100%" width="100%"/>
-                    
-                    <p class="protofoliolable">Animal Trivia</p>
-                    </a>    
-                </div>
-                <div class="square"> 
-                    <a href="https://sabrina-li.github.io/giphy-catalog/"> 
-                    <img src="assets/images/pokemon.jpg" height="100%" width="100%"/>
-                    <p class="protofoliolable">Pokemon GifTastic</p>
-                    </a>    
-                </div>
-                <div class="square"> 
-                    <a href="https://sabrina-li.github.io/RPS-Multiplayer/"> 
-                    <img src="assets/images/RockPaperScissors.jpg" height="100%" width="100%"/>
-                    <p class="protofoliolable">Rock Paper Sissors</p>
-                    </a>    
-                </div>
+                <div class="content-sction">
+                    <div id="bio-image"></div>
+                    <p id="bio-statement">
+                        Full-stack developer based in Atlanta, Georgia. I'm a professionally trained developer with a
+                        background in enterprise applications, hold certification in machine learning and full-stack
+                        bootcamp from Georgia Tech. I have a passion for technology that is changing people's lives for the
+                        better. People spend hours on websites and mobile applications makes me believe that well designed,
+                        professionally developed websites are the true game changers. I am flexible, a quick learner, and
+                        enjoy developing websites and apps that are fun, innovative and make people’s day a little better.
+                        I’ve even worked as a consultant for my clients who are also developers. I’m proficient in languages
+                        such as JavaScript, CSS, HTML, and Node.js, with experience in C++, Java, React, and SQL/NoSQL.
+                        Besides my passion for the tech world, I love the great outdoors and my design inspiration comes
+                        from the harmony and ecosystem in nature. So let's work together to make this world a better place.
+                    </p>
                 </div>
             </div>
 
+
+            <div id="seperator"></div>
+
+
+            <div class="maindiv">
+                <!-- portfolio -->
+                <h2 class="topline">Portfolio</h2>
+
+                <div class="content-sction" id="port-section">
+                    <!-- svg clip path for xray effect -->
+                    <div class="square">
+                        <svg>
+                            <defs>
+                                <clipPath id="clipping-1">
+                                    <circle cx="100" cy="100" r="50%" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                        <a href="https://sabrina-li.github.io/Word-Guess-Game">
+                            <img src="assets/images/Deathly_Hallows_Sign.jpg" height="100%" width="100%" />
+                            <div class="portfoliolable">
+                                <p>Harry Potter Hangman</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="square">
+                        <a href="https://sabrina-li.github.io/Star-Wars-RPG/">
+                            <img src="assets/images/star-wars.png" height="100%" width="100%" />
+                            <div class="portfoliolable">
+                                <p id="square">Star Wars RPG</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="square">
+                        <a href="https://sabrina-li.github.io/Trivia-Game/">
+                            <img src="assets/images/cat.png" height="100%" width="100%" />
+                            <div class="portfoliolable">
+                                <p>Animal Trivia</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="square">
+                        <a href="https://sabrina-li.github.io/giphy-catalog/">
+                            <img src="assets/images/pokemon.jpg" height="100%" width="100%" />
+                            <div class="portfoliolable">
+                                <p>Pokemon GifTastic</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="square">
+                        <a href="https://sabrina-li.github.io/RPS-Multiplayer/">
+                            <img src="assets/images/RockPaperScissors.jpg" height="100%" width="100%" />
+                            <div class="portfoliolable">
+                                <p>Rock Paper Scissors</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
         </main>
+        <!-- <a  class="credit" href="https://unsplash.com/@hayakasa?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Ryoji Hayasaka">Background Photo Credit: Ryoji Hayasaka</a> -->
 
-
-        <!--copy right, contact, misc-->    
-    <!-- https://www.sitepoint.com/community/t/footer-is-overlapping-my-content-body/284613 -->
         <footer>
-        
-
             <p>Copyright ©</p>
-        
         </footer>
 
-
-</html>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+        <script src="assets/javascript/main.js"></script>
+        <script src="assets/javascript/scrollAnimation.js"></script>
+    </body>
+</html >

@@ -1,13 +1,3 @@
-// function protClicked(){
-//     $("#bio-main").load("portfolio.html"); 
-//     var x = document.getElementById("mynav");
-//     x.className = "nav";
-//     console.log("here")
-//     $("#square").mouseover(function(event){
-//         console.log(event);
-//     } )
-// }
-
 function contactClicked(){
     $("#bio-main").load("contact.html"); 
     var x = document.getElementById("mynav");
@@ -37,5 +27,4 @@ $(document).ready(function(){
         // $($(this).children("a")[0]).children("img").css({"clip-path": ""})
         $($(this).children("a")[0]).children("img").removeClass("svgclipping")
     })
-
 })

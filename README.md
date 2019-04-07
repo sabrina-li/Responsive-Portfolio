@@ -17,3 +17,5 @@ https://sabrina-li.github.io/Responsive-Portfolio
 [pokemon gif icon](https://www.flickr.com/photos/jordanbajc/6279650112)
 
 [RPS icon](https://lakepointone.com/products/rock-paper-scissors-lizard-spock-304845)
+
+[header background](https://www.pinterest.com/pin/385480049337512119/?lp=true)
