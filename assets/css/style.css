@@ -55,7 +55,7 @@ header{
     position: fixed;
     top: 0;
     border-bottom: 1px solid #cccccc;
-    z-index: 1;
+    z-index: 100;
 }
 
 /* myheader is 960px centered, aligned with the main body */
@@ -175,16 +175,19 @@ header #myheader nav .a:hover{
     width: 100%;
 }
 
-.square a img{
-    position: relative;
-    z-index: 100;
-    border-radius: 100%;
-    transform: scale(0);
-    transition: transform 0.3s ease-in-out;
+.square img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: clip-path 0.3s ease-in-out;
+    -webkit-clip-path: circle(50 at 0 0);
+    clip-path: circle(0 at 0 0);
 }
 
 .square:hover a img, .square.hover a img{    
-    transform: scale(1);
+    -webkit-clip-path: circle(50% at 0 0);
+    clip-path: circle(50% at 0 0);
 } 
 
 /* contact page specific */
@@ -317,62 +320,3 @@ footer {
         font-size: 23px;
     }
 }
-
-/* .protofoliolable{ */
-    /* display:inline-block; */
-    /* position:relative; */
-    /* margin:10px; */
-    /* overflow:hidden; */
-    /* background:rgba(0,0,0,0.2); */
-    /* transition: background 0.3s ease-in-out; */
-  /* } */
-  
-  /* .protofoliolable:hover{ */
-      /* visibility: hidden; */
-    /* background:purple; */
-    /* transform: translateY(0); */
-  /* } */
-/*   
-  .protofolioimg{
-    transition: background 0.3s ease-in-out;
-    transform: translateY(100%);
-  }
-  .protofolioimg:hover{
-    transform: translateY(0);
-  } */
-/*   
-  .caption1::before,
-  .caption1::after{
-    box-sizing:border-box;
-    position:absolute;
-    width:100%;
-    z-index:-1;
-    background:#cecece;
-    transform:translateX(-30%);
-    transition:transform 0.3s ease-in-out;
-  }
-  
-  
-  .caption1::before {
-      content: attr(data-title);
-      height: 30%;
-      color: #05b19a;
-      font-size: 40px;
-      font-weight: 300;
-      padding: 30px;
-  }
-   
-  .caption1::after {
-      content: '\201C' attr(data-description) '\201D';
-      top: 30%;
-      height: 70%;
-      color: #fff;
-      font-size: 14px;
-      padding: 20px 30px;
-  }
-  
-  
-  .caption1:hover::before,
-  .caption1:hover::after{
-    transform:translateX(0%);
-  } */
