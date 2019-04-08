@@ -15,6 +15,23 @@ $(document).ready(function(){
     })
 
     $("#verticalNav").on('click',showVerticalNav);
+    $("#githubbutton").on('click',function(){
+        var win = window.open("https://github.com/sabrina-li", '_blank');
+        win.focus();
+    })
+    $("#linkedninbutton").on('click',function(){
+        var win = window.open("https://www.linkedin.com/in/sabrina-jingyue-li-1551708b/", '_blank');
+        win.focus();
+    })
+
+    $("#emailbutton").on('click',function(){
+        var win = window.open('mailto:sabrinali0312@gmail.com', '_blank');
+        win.focus();
+    })
+
+    
+
+
     $(".square").on('click',function(e){
         //TODO:detect touch screen
         // if ($(this).attr("data-lifted")){
