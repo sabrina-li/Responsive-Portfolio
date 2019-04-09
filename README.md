@@ -1,7 +1,15 @@
 # Responsive-Portfolio
-Personal portfolio with mobile responsiveness design using media queries:
+This project is my personal portfolio with mobile responsiveness design using media queries:
 
-https://sabrina-li.github.io/Responsive-Portfolio
+Visite Website [here](https://sabrina-li.github.io/Responsive-Portfolio)
+
+## Technical spec
+
+This website is built purely on html/css/javascript showcasing front-end development skills using 
+DOM manipulation & jQuery
+Fully mobile responsive, runs on all screen sizes
+Parallax scroll effect
+CSS animation for lifting the fog to reveal portfolio images
 
 
 ## Inspiration and credits:
