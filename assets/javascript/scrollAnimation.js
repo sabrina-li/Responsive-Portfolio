@@ -10,8 +10,10 @@
 
 let count = 0;
 $(document).ready(function(){
-    if(window.innerWidth >=640){
-        $(window).on('scroll',function(e){
+    // console.log(win)
+    
+    $(window).on('scroll',function(e){
+        if(window.innerWidth >=640){
             //TODO: test performance
             let scrollY = window.scrollY;
             let innerHeigh = window.innerHeight;
@@ -21,9 +23,7 @@ $(document).ready(function(){
                 $("#bio-image").removeAttr('style');
                 $("#bio-statement").css("transform","translateY("+scrollY+"px)");
                 $("#bio-image").css("transform","translateY("+scrollY+"px)");
-            // }else if(scrollY<120){
                 
-
             }else if(scrollY>130 && scrollY<innerHeigh/2){
                 scrollY = window.scrollY-120;
                 // document.querySelector('#bio-statement').style.textShadow = "0px 0px "+scrollY/10+"px white";
@@ -42,8 +42,8 @@ $(document).ready(function(){
                 
                 
                 
-        })
-    }
-    
+        
+        }
+    })
 
 })
