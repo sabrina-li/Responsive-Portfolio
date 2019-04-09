@@ -23,7 +23,6 @@ $(document).ready(function(){
                 $("#bio-image").removeAttr('style');
                 $("#bio-statement").css("transform","translateY("+scrollY+"px)");
                 $("#bio-image").css("transform","translateY("+scrollY+"px)");
-                
             }else if(scrollY>130 && scrollY<innerHeigh/2){
                 scrollY = window.scrollY-120;
                 // document.querySelector('#bio-statement').style.textShadow = "0px 0px "+scrollY/10+"px white";
