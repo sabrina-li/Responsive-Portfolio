@@ -17,6 +17,7 @@ html,body {
 } 
 main{
     position: relative;
+    z-index: -1;
 }
 
 
@@ -86,6 +87,7 @@ header #myheader nav .a{
     text-decoration: none;
     padding: 0 0.8rem;
     cursor: pointer;
+    font-weight: 500;
 }
 header #myheader nav .a:visited{
     color:var(--lightest-white);
@@ -128,6 +130,16 @@ main{
 
 #about{
     padding-top:100px;
+    position: relative;
+}
+#resume{
+    position: absolute;
+    right: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+#resume:hover{
+    color:var(--lightest-white)
 }
 
 /* topic in main section align with content section */
@@ -211,6 +223,17 @@ main{
     height: 100%;
     text-align: center;
     font-size: 20px;
+}
+
+.portfoliolable .openapp{
+    position: absolute;
+    padding: 15px;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+}
+.portfoliolable .openapp{
+    background-color: var(--darker-gray)
 }
 
 .portfoliolable p{
@@ -388,7 +411,7 @@ footer::after{
         width: 100%;
         margin: 0.5rem;
         justify-content: space-between;
-       
+        font-size: 20px;
     }
     header #myheader nav.responsive a{
         position: relative;
@@ -416,6 +439,9 @@ footer::after{
         background-attachment: fixed;
         background-position: right 0px;
     }
+    #bio-statement{
+        font-size: 19px;
+    }
     #about{
         padding-top: 20px;
     }
@@ -424,6 +450,10 @@ footer::after{
         height: 60vw;
         float: none;
         padding-bottom: 10px;
+    }
+
+    #seperator{
+        height:10vh;
     }
 
     #port-section{
@@ -441,6 +471,7 @@ footer::after{
         top: 60%;
         left: 50%; */
         text-align: center;
-        font-size: 23px;
+        font-size: 17px;
+        line-height: 1;
     }
 }
