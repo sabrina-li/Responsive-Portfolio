@@ -15,10 +15,6 @@ html,body {
     color: var(--lighter-white);
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 } 
-/* main{
-    position: relative;
-    z-index: -10;
-} */
 
 
 
@@ -440,7 +436,7 @@ footer::after{
         margin: 0 auto;
         /* padding-top: 0; */
         background-attachment: fixed;
-        background-position: right 0px;
+        background-position: -550px 0px;
     }
     #bio-statement{
         font-size: 19px;
