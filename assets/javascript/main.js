@@ -5,15 +5,15 @@ $(document).ready(function(){
 
     //links navigation on the site
     $("#contactbutton").on('click',contactClicked);
-    $(".githubbutton").on('click',function(){
+    $(document).on('click',".githubbutton",function(){
         var win = window.open("https://github.com/sabrina-li", '_blank');
         // win.focus();
     })
-    $(".linkedninbutton").on('click',function(){
+    $(document).on('click','.linkedninbutton',function(){
         var win = window.open("https://www.linkedin.com/in/sabrina-jingyue-li-1551708b/", '_blank');
         // win.focus();
     })
-    $(".emailbutton").on('click',function(){
+    $(document).on('click','.emailbutton',function(){
         var win = window.open('mailto:sabrinali0312@gmail.com', '_blank');
         // win.focus();
     })
