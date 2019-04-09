@@ -18,6 +18,7 @@ html,body {
 
 main{
     min-height: 90vh;
+    z-index: -10;
 }
 
 /* header across the whole page */
@@ -195,9 +196,6 @@ main{
     opacity: 0.5;
 }
 
-
- 
-
 #seperator{
     /* padding-top: 10vh; */
     height: 50vh;
@@ -275,6 +273,24 @@ main{
 /* contact page specific */
 #contacttopline{
     padding-top: 50px;
+}
+#contact,#contact a{
+    position: relative;
+    z-index: 1;
+}
+{
+
+}
+#contact:after{
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 0;   
+    background: #222222;
+    opacity: 0.5;
 }
 input,textarea{
     width: 100%;
