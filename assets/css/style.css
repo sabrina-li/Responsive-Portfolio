@@ -84,6 +84,7 @@ header #myheader nav .a{
     padding: 0 0.8rem;
     cursor: pointer;
     font-weight: 500;
+    color:var(--lightest-white);
 }
 header #myheader nav .a:visited{
     color:var(--lightest-white);
