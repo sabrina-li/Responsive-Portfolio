@@ -1,4 +1,4 @@
-var hover=false;
+var isTouch=false;
 $(document).ready(function(){
     //responsive nav
     $("#verticalNav").on('click',showVerticalNav);
@@ -26,10 +26,12 @@ $(document).ready(function(){
         // win.focus();
     })
 
+    $(window).on('touchstart',function(e){
+        isTouch=true;
+    })
+    
     //go to the git hub repo when clicking on the square other than the open app
     $(".square").on('click',function(e){
-        //TODO detect if touch screen
-        
         //if not hovering over the open app button
         if ($(this).find(".openapp:hover").length == 0){
             var win = window.open($(this).attr("data"), '_blank');
@@ -46,7 +48,7 @@ $(document).ready(function(){
     })
     $(".square").mouseover(function(event){
         //if not hovering over the open app button
-        if ($(this).find(".openapp:hover").length == 0){
+        if (!isTouch && $(this).find(".openapp:hover").length == 0){
             $(this).children("img").addClass("svgclipping");
         }
     })
