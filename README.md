@@ -3,16 +3,24 @@ This project is my personal portfolio with mobile responsiveness design using me
 
 Visite Website [here](https://sabrina-li.github.io/Responsive-Portfolio)
 
-## Technical spec
+## Technical Spec
 
-This website is built purely on html/css/javascript showcasing front-end development skills using 
-![pages](readmeIamges/page.gif)
+This website is built purely on html/css/javascript.
 
-DOM manipulation & jQuery
 
-Fully mobile responsive, runs on all screen sizes
-Parallax scroll effect
-CSS animation for lifting the fog to reveal portfolio images
+- Parallax scroll effect
+
+![parallax scroll](readmeImages/parallax.gif)
+
+- CSS animation, svg clipping and DOM manipulation & jQuery
+
+    lifting the fog to reveal portfolio images
+
+![lift fog effect](readmeImages/foglift.gif)
+
+- Fully mobile responsive, runs on all screen sizes with mobile first
+
+![responsiveness](readmeImages/responsive.gif)
 
 
 ## Inspiration and credits:
