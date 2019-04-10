@@ -1,7 +1,0 @@
-#myheader  #bio-main, #contact-main, #proto-main - max width
-h1 and nav - overlapping√
-
-
-
-
-

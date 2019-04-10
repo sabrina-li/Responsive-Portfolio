@@ -278,9 +278,8 @@ main{
     position: relative;
     z-index: 1;
 }
-{
 
-}
+
 #contact:after{
     content: "";
     top: 0;
@@ -465,7 +464,7 @@ footer::after{
         margin: 0 auto;
         /* padding-top: 0; */
         background-attachment: fixed;
-        background-position: -500px 0px;
+        background-position: 60% 0px;
     }
     #bio-statement{
         font-size: 19px;
