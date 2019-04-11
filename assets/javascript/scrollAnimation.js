@@ -14,28 +14,36 @@ $(document).ready(function(){
     
     $(window).on('scroll',function(e){
         if(window.innerWidth >=640){
-            //TODO: test performance
+            //TODO: test performance on win
             let scrollY = window.scrollY;
             let innerHeigh = window.innerHeight;
+
+          
     
-            if(scrollY<50){
+            if(scrollY<500){
+                $(".mainaboutdiv").removeAttr('style');
+                $(".aboutright").removeAttr('style');
                 $("#bio-statement").removeAttr('style');
                 $("#bio-image").removeAttr('style');
-                $("#bio-statement").css("transform","translateY("+scrollY+"px)");
-                $("#bio-image").css("transform","translateY("+scrollY+"px)");
-            }else if(scrollY>130 && scrollY<innerHeigh/2){
-                scrollY = window.scrollY-120;
+                // $("#bio-statement").css("transform","translateY("+scrollY+"px)");
+                $(".mainaboutdiv").css("transform","translateY("+scrollY+"px)");
+                $(".aboutright").css("transform","translateY(-"+scrollY+"px)");
+                
+            }else if(scrollY<innerHeigh+500){
+                scrollY = window.scrollY-500;
                 // document.querySelector('#bio-statement').style.textShadow = "0px 0px "+scrollY/10+"px white";
                 $("#bio-statement").css({
                     "color":"transparent",
                     "text-shadow": "0px 0px "+scrollY/20+"px white",
-                    "transform":"scale("+(1+scrollY/innerHeigh)+") translateY(50px)",
+                    "transform":"scale("+(1+scrollY/innerHeigh)+")",
                     "opacity":1-scrollY/innerHeigh*2.5
                 })
                 
                 $("#bio-image").css({
                     "opacity":1-scrollY/innerHeigh*3,
-                    "transform":"scale("+(1+scrollY/innerHeigh)+") translateY(50px)",
+                    // "transform":"scale("+(1+scrollY/innerHeigh)+") ",
+                    "transform":"translate3d(-"+scrollY/innerHeigh*600+"px, -"+scrollY/innerHeigh*600+"px, "+scrollY/innerHeigh*30+"px)"
+                    
                 })
             }
                 

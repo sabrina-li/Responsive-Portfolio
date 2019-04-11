@@ -48,7 +48,7 @@ $(document).ready(function(){
     })
     $(".square").mouseover(function(event){
         //if not hovering over the open app button
-        if (!isTouch && $(this).find(".openapp:hover").length == 0){
+        if ($(this).find(".openapp:hover").length == 0){
             $(this).children("img").addClass("svgclipping");
         }
     })
