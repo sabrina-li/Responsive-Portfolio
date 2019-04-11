@@ -3,7 +3,6 @@
     --lighter-white:#CAC9C8;
     --dark-gray:#373737;
     --darker-gray:#222222;
-    
 }
 
 html,body {
@@ -11,9 +10,8 @@ html,body {
     width: 100%;
     padding: 0;
     margin: 0;
-    /* position: relative;  */
     color: var(--lighter-white);
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Oswald', 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
 } 
 
 main{
@@ -24,21 +22,21 @@ main{
 /* header across the whole page */
 header{
     width: 100%;
-    background-image: url("../images/5cd7c9c98eb92a1e13c09075c406aae1.jpg");
-    background-size: 100%, auto;
+    background: var(--lightest-white);
+    border-bottom: 2px solid var(--lighter-white);
+    color: var(--darker-gray);
     overflow: hidden;
     position: fixed;
     top: 0;
-    border-bottom: 1px solid var(--lightest-white);
     z-index: 100;
 }
 
 /* myheader is 960px centered, aligned with the main body */
 header #myheader{
-    color: var(--lightest-white);
     overflow: hidden;
     margin: 0 auto;
-    width: 960px;
+    max-width: 960px;
+    padding: 0 20px;
     position: relative;
     height: fit-content;
 }
@@ -46,33 +44,20 @@ header #myheader{
 
 header #myheader h1 {
     position: relative;
-    padding: 20px 10px 10px 10px;
+    padding: 30px 10px 10px 0;
     width: fit-content;
-    display: block;
     font-size: 30px;
-}
-header #myheader h1::after{
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-    background: #222222;
-    opacity: 0.5;
+    text-transform: uppercase;
+    font-family: 'Anton','sans-serif';
 }
 
 
 header #myheader nav {    
     width: fit-content;
-    text-align: center;
     font-size: 25px;
-    justify-content: space-between;
     position: absolute;
-    top:20px;
+    top:25px;
     right:10px;
-    z-index: 1;
 }
 
 /* hide the nav icon used for phone screens */
@@ -82,26 +67,23 @@ header #myheader .icon {
 
 header #myheader nav .a{
     max-height: 35px;
-    /* margin-bottom: 0.8rem; */
     text-decoration: none;
-    padding: 0 0.8rem;
+    padding: 0 10px;
     cursor: pointer;
-    font-weight: 500;
-    color:var(--lightest-white);
-}
-header #myheader nav .a:visited{
-    color:var(--lightest-white);
 }
 
+header #myheader nav .a:visited{
+    color: var(--darker-gray);
+}
+#resume:hover,
 header #myheader nav .a:hover{
     opacity: 0.8;
 }
 .linkbtns{
     display: inline;
 }
+
 .githubbutton, .linkedninbutton{
-    margin: 0;
-    padding:0;
     position: relative;
     top: 5px;
 }
@@ -128,54 +110,28 @@ main{
 } 
 
 /* main section is 960 px width */
-.maindiv{
-    padding-top: 80px;
+.maindiv,
+.mainaboutdiv{
+    padding-top: 120px;
     width: 960px;
     margin: 10px auto 0 auto;
 }
-
-#about{
-    padding-top:100px;
-    position: relative;
-}
-#resume{
-    position: absolute;
-    right: 0;
-    font-size: 15px;
-    cursor: pointer;
-}
-#resume:hover{
-    color:var(--lightest-white)
-}
-
-/* topic in main section align with content section */
-.topline{
-    margin: 20px 40px;
-    border-bottom: 1px solid var(--lighter-white);
-    color: var(--lighter-white);
-    font-size: 23px;
-}
-
-/* content inside the main section with margin and paddings */
-.content-sction{
-    color: var(--lighter-white);
-    margin: auto 40px;
-    padding-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 2;
-    font-size: 15px;
+.mainaboutdiv{
+    display: flex;
 }
 
 /* bio page specific */
 #bio-image{
     position: relative;
     margin-right: 40px;
-    width:200px;
-    height: 200px;
-    float: left;
+    width:600px;
+    height: 500px;
     z-index: 10;
     background-image: url("../images/profile.png");
     background-size: cover;
+}
+.aboutright{
+    width: 100%;
 }
 #bio-statement{
     /* color: white; */
@@ -195,6 +151,37 @@ main{
     background: #222222;
     opacity: 0.5;
 }
+
+#about{
+    position: relative;
+}
+#resume{
+    position: absolute;
+    right: 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+/* topic in main section align with content section */
+.topline{
+    margin: 20px 0;
+    border-bottom: 1px solid var(--lighter-white);
+    color: var(--lighter-white);
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* content inside the main section with margin and paddings */
+.content-sction{
+    color: var(--lighter-white);
+    margin: auto 40px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 15px;
+}
+
 
 #seperator{
     /* padding-top: 10vh; */
@@ -344,11 +331,12 @@ footer {
     height:10vh;
     padding-top: 10px;
     width:100%;
-    background: url(../images/5cd7c9c98eb92a1e13c09075c406aae1.jpg);
+    /* background: url(../images/5cd7c9c98eb92a1e13c09075c406aae1.jpg); */
+    background: var(--darker-gray);
     text-align: center;
     color:var(--lightest-white);
 }
-footer::after{
+/* footer::after{
     content: "";
     top: 0;
     left: 0;
@@ -358,7 +346,7 @@ footer::after{
     z-index: -1;   
     background: #222222;
     opacity: 0.5;
-}
+} */
 
 
 @media screen and (max-width:980px){
