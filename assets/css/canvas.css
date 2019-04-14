@@ -1,0 +1,45 @@
+/* main{
+    background: url("../images/ryoji-hayasaka-180564-unsplash.jpg");
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+/* }   */
+body{
+    font-family: 'Oswald', 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
+    position: relative;
+    background: url("../images/ryoji-hayasaka-180564-unsplash.jpg");
+    background-size: cover;
+}
+
+p{
+    position: fixed;
+    top: 40%;
+    left: 25%;
+    right: 15%;
+    color:white;
+    z-index: 1;
+    font-size: 21px;
+    line-height: 1.5;
+}
+
+p span{
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+p span:hover{
+    color: var(--lighter-white)
+}
+
+.slidout{
+    transform: translateX(100%);
+    animation: slidout 1s ease-in-out;
+}
+@keyframes slidout{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%)
+    }
+}
