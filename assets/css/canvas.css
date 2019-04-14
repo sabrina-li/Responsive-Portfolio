@@ -10,7 +10,11 @@ body{
     background: url("../images/ryoji-hayasaka-180564-unsplash.jpg");
     background-size: cover;
 }
-
+#subline{
+    transform: translate(30px,-20px);
+    color:var(--lighter-white);
+    animation: hovering 2s ease-in-out infinite;
+}
 p{
     position: fixed;
     top: 40%;
@@ -31,15 +35,15 @@ p span:hover{
     color: var(--lighter-white)
 }
 
-.slidout{
-    transform: translateX(100%);
-    animation: slidout 1s ease-in-out;
-}
-@keyframes slidout{
+
+@keyframes hovering{
     0%{
-        transform: translateX(0);
+        transform: translate(30px,-20px);
+    }
+    50%{
+        transform: translate(30px,-15px);
     }
     100%{
-        transform: translateX(100%)
+        transform: translate(30px,-20px);
     }
 }

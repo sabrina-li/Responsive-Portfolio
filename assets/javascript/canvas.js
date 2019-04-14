@@ -28,8 +28,8 @@ window.addEventListener('load',function(event){
 
 class Particles{
     constructor(x,y,dx,dy,color){
-        this.x = x;
-        this.y = y;
+        this.x = x+Math.random()*1000-500;
+        this.y = y+Math.random()*1000-500;
         this.initialX = x;
         this.initialY = y;
         this.radius = maxR //Math.random() * maxR + minR;
@@ -54,8 +54,8 @@ class Particles{
             if(this.color=="white"){
                 this.color="white";
             }
-            this.dx= -(this.x - this.initialX)/10;
-            this.dy= -(this.y - this.initialY)/10;
+            this.dx= -(this.x - this.initialX)/15;
+            this.dy= -(this.y - this.initialY)/15;
 
         }
        
