@@ -1,18 +1,28 @@
 html,body{
     height:100%;
     min-height:100%;
-    }
+}
 
 body{
     font-family: 'Oswald', 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
-    position: relative;
+    background: "black";
     background: url("../images/ryoji-hayasaka-180564-unsplash.jpg");
     background-size: cover;
     background-repeat: repeat;
+    color:var(--lighter-white);
 }
+#headline{
+    font-size: 40px;
+    position: fixed;
+    top: 35%;
+    left: 25%;
+    right: 15%;
+    color:var(--lightest-white);
+    display: none;
+}
+
 #subline{
     transform: translate(30px,-20px);
-    color:var(--lighter-white);
     animation: hovering 2s ease-in-out infinite;
 }
 p{
@@ -20,7 +30,6 @@ p{
     top: 40%;
     left: 25%;
     right: 15%;
-    color:white;
     z-index: 1;
     font-size: 21px;
     line-height: 1.5;

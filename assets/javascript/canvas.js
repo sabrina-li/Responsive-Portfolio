@@ -2,6 +2,17 @@ var canvas,c,mouse,font,color,maxR,maxSpeed;
 
 window.addEventListener('load',function(event){
 
+    if (Modernizr.canvas) {
+        showCanvas();
+    } else {
+        document.querySelector("#subline").style.display="none";
+        document.querySelector("#headline").style.display="block";
+    }
+
+
+})
+
+function showCanvas(){
     canvas = document.querySelector("#canvas");
     c = canvas.getContext('2d');
     mouse ={ x:undefined,y:undefined};
@@ -22,9 +33,17 @@ window.addEventListener('load',function(event){
     document.querySelector("#contact").addEventListener('click',function(event){
         var win = window.open('mailto:sabrinali0312@gmail.com');
     })
-
-})
-
+    window.addEventListener("mousemove",function(event){
+        mouse.x = event.x - canvas.offsetLeft;
+        mouse.y = event.y- canvas.offsetTop;
+    })
+    
+    window.addEventListener('resize',function(event){
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+        init();
+    })
+}
 
 class Particles{
     constructor(x,y,dx,dy,color){
@@ -97,16 +116,7 @@ function initialPositions(){
     
 }
 
-window.addEventListener("mousemove",function(event){
-    mouse.x = event.x - canvas.offsetLeft;
-    mouse.y = event.y- canvas.offsetTop;
-})
 
-window.addEventListener('resize',function(event){
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
-    init();
-})
 
 
 
