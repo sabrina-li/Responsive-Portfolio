@@ -1,7 +1,7 @@
 html,body {
     height: 100%;
     /* min-height: 100%; */
-    /* width: 100%; */
+    width: 100%;
     padding: 0;
     margin: 0;
     color: var(--lighter-white);
@@ -11,6 +11,12 @@ html,body {
 main{
     min-height: 90vh;
     z-index: -10;
+    position: relative;
+    background: url("../images/ryoji-hayasaka-180564-unsplash.jpg");
+    background-size: cover ;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: right 50px;    
 }
 
 /* header across the whole page */
@@ -94,14 +100,6 @@ header #myheader nav .a:hover{
 }
 
 /* main background */
-main{
-    background: url("../images/ryoji-hayasaka-180564-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right 50px;
-    z-index: -100;
-} 
 
 /* main section is 960 px width */
 .maindiv{
@@ -123,7 +121,8 @@ main{
     height: 100%;
     z-index: 10;
     background-image: url("../images/profile.png");
-    background-size: cover;
+    background-size: 100% ;
+    background-repeat: no-repeat;
 }
 .aboutright{
     width: 60%;
@@ -131,7 +130,8 @@ main{
 }
 
 /* content inside the main section with margin and paddings */
-.content-sction{
+.content-section{
+    position: relative;
     color: var(--lighter-white);
     padding-bottom:  20px;
     font-family: Arial, Helvetica, sans-serif;
@@ -139,6 +139,17 @@ main{
     font-size: 15px;
 }
 
+.content-section:after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    height: 100%;
+    z-index: -1;   
+    background: #222222;
+    opacity: 0.5;
+}
 
 
 
@@ -169,17 +180,8 @@ main{
     z-index: 1;
 }
 
-/* opacity background to make text show
-.aboutright:after{
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 0px;
-    right: 0px;
-    z-index: -1;   
-    background: #222222;
-    opacity: 0.5;
-} */
+/* opacity background to make text show */
+
 
 
 #seperator{
@@ -194,6 +196,11 @@ main{
     margin: 20px 40px;
 }
 #port-section{
+    color: var(--lighter-white);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    font-size: 15px;
+
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
@@ -383,6 +390,10 @@ footer {
         margin-right: auto;
         width: 95%
     }
+
+    #seperator{
+        height:10vh;
+    }
 }
 
 
@@ -429,12 +440,13 @@ footer {
     main, .maindiv{
         padding-top: 10px;
         margin: 0 auto;
-        background-attachment: fixed;
-        background-position: 60% 0px;
+        background-position: -670px 50px; 
     }
+
     .mainaboutdiv{
         display: block;
-        overflow: auto;
+        /* overflow: auto; */
+        height: fit-content;
     }
     .aboutright{
         width: 70vw;

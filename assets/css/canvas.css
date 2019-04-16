@@ -8,6 +8,7 @@ body{
     position: relative;
     background: url("../images/ryoji-hayasaka-180564-unsplash.jpg");
     background-size: cover;
+    background-repeat: repeat;
 }
 #subline{
     transform: translate(30px,-20px);
