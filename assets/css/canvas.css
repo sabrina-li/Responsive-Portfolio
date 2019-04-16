@@ -1,9 +1,8 @@
-/* main{
-    background: url("../images/ryoji-hayasaka-180564-unsplash.jpg");
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
-/* }   */
+html,body{
+    height:100%;
+    min-height:100%;
+    }
+
 body{
     font-family: 'Oswald', 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
     position: relative;
