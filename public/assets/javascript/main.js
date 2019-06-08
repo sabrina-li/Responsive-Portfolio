@@ -5,6 +5,7 @@ $(document).ready(function(){
 
     //links navigation on the site
     $("#contactbutton").on('click',contactClicked);
+    $("#contactbutton").on('click',aboutClicked);
     $(document).on('click',".githubbutton",function(){
         var win = window.open("https://github.com/sabrina-li", '_blank');
         // win.focus();
@@ -65,6 +66,9 @@ function contactClicked(){
     let contact = $("<div>").addClass("maindiv");
     contact.load("contact.html"); 
     $("main").append(contact);
+}
+function aboutClicked(){
+    window.location.href = "about.html";
 }
 
 function showVerticalNav() {
