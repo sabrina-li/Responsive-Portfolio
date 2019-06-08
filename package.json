@@ -1,0 +1,23 @@
+{
+  "name": "responsive-portfolio",
+  "version": "1.0.0",
+  "description": "personal portfolio page",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sabrina-li/Responsive-Portfolio.git"
+  },
+  "author": "Sabrina L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sabrina-li/Responsive-Portfolio/issues"
+  },
+  "homepage": "https://github.com/sabrina-li/Responsive-Portfolio#readme"
+}
