@@ -1,5 +1,5 @@
 let canvas,c,mouse,font,maxR,maxSpeed;
-const particles = [];
+let particles = [];
 
 function drawText(text){
     c.clearRect(0,0,canvas.width,canvas.height);
