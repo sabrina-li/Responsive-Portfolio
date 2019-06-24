@@ -20,7 +20,7 @@ $(document).ready(function(){
 
     //links navigation on the site
     $("#contactbutton").on("click",contactClicked);
-    $("#contactbutton").on("click",aboutClicked);
+    $("#aboutbutton").on("click",aboutClicked);
     $(document).on("click",".githubbutton",function(){
         window.open("https://github.com/sabrina-li", "_blank");
         // win.focus();
