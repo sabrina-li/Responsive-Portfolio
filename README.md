@@ -1,7 +1,7 @@
 # Responsive-Portfolio
 This project is my personal portfolio with mobile responsiveness design using media queries:
 
-Visite Website [here](https://sabrina-li.github.io/Responsive-Portfolio)
+Visite Website [here](https://sabrina-li.herokuapp.com)
 
 ## Technical Spec
 
